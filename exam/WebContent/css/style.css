@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+*{
+	margin:0; padding:0;
+	text-decoration: none;
+	list-style: none;
+}
+header, section, footer{
+	width: 1200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -600px;
+/* 	border: 1px solid red; */
+/* 	box-sizing: border-box; */
+}
+header::before, section::before, footer::before,
+header::after, section::after, footer::after{
+	display: block;
+	content: "";
+}
+header::after, section::after, footer::after{
+	clear: both;
+}
+header{
+	height: 100px;
+	top: 40px;
+	z-index: 1000;
+}
+header > div{
+	float: left;
+	position: relative;
+}
+header > div#logo{
+	width: 200px;
+	height: 100px;
+}
+header > div#logo > h1{
+	text-align: center;
+	line-height: 100px;
+}
+header > div#nav > ul{
+/* 	margin-left: 150px;	 */
+}
+header > div#nav > ul > li{
+	overflow: hidden;	
+	float: left;
+	width: 200px;
+	height: 100px;
+	transition: height 0.2s;
+}
+header > div#nav > ul:hover > li{	/*li:hover: 카테고리별 개별 오픈*/
+	height: 383px;	
+}
+header > div#nav > ul > li > h3{
+	text-align: center;
+	line-height: 100px;
+}
+header > div#nav > ul > li > h3 > a{
+	color: #666;
+	display: block;	
+}
+header > div#nav > ul > li.active > h3 > a,
+header > div#nav > ul > li:hover > h3 > a{
+	color: #333;
+	font-weight: 700;
+}
+header > div#nav > ul > li > ul > li{
+	width: 200px;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	background: white;
+}
+header > div#nav > ul > li > ul > li > a{
+	color: #999;
+}
+header > div#nav > ul > li > ul > li:hover > a{
+	color: #333;
+	display: block; /* 영역 전체 링크 활성화 */
+}
+header > div#nav > ul > li > ul {
+	border-top: 3px solid black;
+}
+section#slide{
+	position: relative;
+	height: 300px;
+	top:140px;
+	overflow: hidden;
+}
+section#slide > div.container{
+	position: absolute;
+	width: 3600px;
+	height: 300px;
+	cursor: pointer;
+}
+section#slide > div.container > div{
+	float: left;	
+	width: 1200px;
+	height: 300px;
+}
+section#slide > div.container > div#slide1{
+	background-image: url('../imgs/img1.jpg');
+}
+section#slide > div.container > div#slide2{
+	background-image: url('../imgs/img2.jpg');
+}
+section#slide > div.container > div#slide3{
+	background-image: url('../imgs/img3.jpg');
+}
+section#slide > div.container > div > h3{
+	text-align: center;
+	color: white;
+	line-height: 300px;
+}
+section#contents {
+	height: 200px;
+	top: 440px;
+}
+section#contents > div {
+	width: 400px;
+	height: 200px;	
+	float: left;
+/* 	border: 1px solid red; */
+/* 	box-size: border-box; */
+}
+section#contents > div > p{
+	text-align: center;
+	line-height: 200px;	
+}
+section#contents > div#content1 > div#c1Above > div {
+	width: 80px;
+	height: 40px;
+	float: left;
+	background: #acac00;
+	text-align: center;
+	line-height: 40px;
+	color: #666;
+	cursor: pointer;
+}
+section#contents > div#content1 > div#c1Above > div.active {
+	background: yellow;
+	font-weight: 700;	
+	color: #333;'
+}
+section#contents > div#content1 > div#c1Above::before,
+section#contents > div#content1 > div#c1Above::after{
+	display: block;
+	content: "";
+}
+section#contents > div#content1 > div#c1Above::after{
+	clear: both;	
+}
+section#contents > div#content1 > div#c1Below1,
+section#contents > div#content1 > div#c1Below2 {
+	width: 400px;
+	height: 160px;
+	background: yellow;
+	
+}
+section#contents > div#content1 > div#c1Below2 {
+	display: none;	
+	padding: 5px;
+	box-sizing: border-box;
+}
+section#contents > div#content1 > div#c1Below2 > div{
+	margin: 5px;
+	width: 120px;
+	height: 140px;
+	background: pink;
+	float: left;
+	background-size: 120px 140px;
+}
+footer{
+	height: 100px;
+	top: 640px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	line-height: 100px;
+}
+div#popup {
+	width: 300px;
+	height: 500px;
+	background: white;
+	box-shadow: 0 0 3px 3px #f1f1f1;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+div#popup > div#pHead{
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 80px;
+}
+div#popup > div#pBody{
+	padding: 5px;
+	box-sizing: border-box;
+	height: 380px;	
+}
+div#popup > div#pFoot{
+	height: 40px;
+}
+div#popup > div#pFoot > button{
+	float: right;
+	margin-right: 10px;	
+}
+body > div#hNav{
+	width: 1200px;
+	position: absolute;
+	height: 40px;
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
+	margin-left: -600px;
+	left: 50%;
+}
+body > div#hNav > p{
+	font-weight: 900;
+	text-align: right;
+	line-height: 40px;
+	font-size: 0.75rem;	
+}
