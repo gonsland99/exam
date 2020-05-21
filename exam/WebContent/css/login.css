@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+	margin:0; padding:0;
+	text-decoration: none;
+	list-style: none;
+}
+h2{
+	text-align: center;
+	line-height: 80px;
+}
+.container{
+	width: 400px;
+	height: 250px;
+	border: 5px double gray;
+	margin: 0 auto;
+	padding: 10px;
+}
+.container > div{
+	width: 400px;
+	height: 70px;
+	margin-top: 10px;	
+}
+.container > div:first-child{
+	margin-top: 0;
+}
+input{
+	width: 400px;
+	height: 50px;
+	font-size: 1.25rem;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+button{
+	width: 400px;
+	height: 50px;
+	background: yellowgreen;
+}
