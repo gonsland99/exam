@@ -19,7 +19,7 @@
 		<p>
 			<span style="margin-right: 20px"><%=userId.equals("") ? "" : userId + "님 반갑습니다."%></span>
 			<span><a href='join.jsp'>회원가입</a></span> / 
-			<span><%=userId.equals("") ? "<a href='login.jsp'>로그인</a>" : "<a href='logoutAction.jsp'>로그아웃</a>" %></span>
+			<span><%=userId.equals("") ? "<a href='login.jsp'>로그인</a>" : "<a href='logoutAction.do'>로그아웃</a>" %></span>
 		</p>
 	</div>
 	<header>

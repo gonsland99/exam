@@ -10,7 +10,7 @@
 <body>
 	<section>
 		<h2>로그인</h2>
-		<form name="login" action="loginAction.jsp" method="post">
+		<form name="login" action="loginAction.do" method="post">
 			<div class="container">
 				<div><input type="text" placeholder="아이디(이메일)" name="uId" required="required" autocapitalize="none"></div>			
 				<div><input type="password" placeholder="비밀번호" name="uPw" required="required"></div>
