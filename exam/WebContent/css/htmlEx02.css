@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+/* .clearFix::before,.clearFix::after{ */
+/* 	display: block; */
+/* 	content: ""; */
+/* } */
+/* .clearFix::after{ */
+/* 	clear: both; */
+/* } */
+header, section{
+	position: absolute;
+	top:0; left:0;
+}
+#logo{
+	width: 300px;
+	height: 80px;
+	float: left;
+}
+#menus{
+	margin-left: 900px;
+}
+#menus > ul > li{
+	margin: 30px;
+	float: left;
+}
+#top{
+	position: relative;
+	top: 80px;
+	height: 30px;
+	background: blue;
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+}
+#img1 > img{
+	position: relative;
+	top: 115px;
+	width: 100%;
+	height: 400px;
+	mirgin: auto;
+}
+#img2 > img{
+
+
+@media all and (min-width:768px) {
+}
+@media all and (min-width:992px) {
+}s
